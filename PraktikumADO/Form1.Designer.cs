@@ -135,7 +135,7 @@
             this.Controls.Add(this.btnHitungMhs);
             this.Controls.Add(this.btnConnect);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SqlCommand, ExecuteNonQuery, ExecuteScalar";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
