@@ -41,7 +41,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(162, 329);
+            this.btnConnect.Location = new System.Drawing.Point(201, 131);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // btnHitungMhs
             // 
-            this.btnHitungMhs.Location = new System.Drawing.Point(349, 328);
+            this.btnHitungMhs.Location = new System.Drawing.Point(191, 160);
             this.btnHitungMhs.Name = "btnHitungMhs";
             this.btnHitungMhs.Size = new System.Drawing.Size(97, 23);
             this.btnHitungMhs.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // btnHitungMK
             // 
-            this.btnHitungMK.Location = new System.Drawing.Point(502, 328);
+            this.btnHitungMK.Location = new System.Drawing.Point(201, 189);
             this.btnHitungMK.Name = "btnHitungMK";
             this.btnHitungMK.Size = new System.Drawing.Size(75, 23);
             this.btnHitungMK.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(679, 328);
+            this.btnUpdate.Location = new System.Drawing.Point(213, 305);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 3;
@@ -80,22 +80,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 68);
+            this.label1.Location = new System.Drawing.Point(144, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Hasil";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtHasil
             // 
-            this.txtHasil.Location = new System.Drawing.Point(460, 98);
+            this.txtHasil.Location = new System.Drawing.Point(188, 103);
             this.txtHasil.Name = "txtHasil";
             this.txtHasil.Size = new System.Drawing.Size(100, 22);
             this.txtHasil.TabIndex = 5;
             // 
             // btnHitungDosen
             // 
-            this.btnHitungDosen.Location = new System.Drawing.Point(293, 380);
+            this.btnHitungDosen.Location = new System.Drawing.Point(188, 218);
             this.btnHitungDosen.Name = "btnHitungDosen";
             this.btnHitungDosen.Size = new System.Drawing.Size(113, 23);
             this.btnHitungDosen.TabIndex = 6;
@@ -104,7 +105,7 @@
             // 
             // btnUpdateSKS
             // 
-            this.btnUpdateSKS.Location = new System.Drawing.Point(480, 379);
+            this.btnUpdateSKS.Location = new System.Drawing.Point(188, 247);
             this.btnUpdateSKS.Name = "btnUpdateSKS";
             this.btnUpdateSKS.Size = new System.Drawing.Size(118, 23);
             this.btnUpdateSKS.TabIndex = 7;
@@ -113,7 +114,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(679, 379);
+            this.btnInsert.Location = new System.Drawing.Point(197, 276);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(109, 23);
             this.btnInsert.TabIndex = 8;
