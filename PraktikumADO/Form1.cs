@@ -24,7 +24,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source=LAPTOP-5A4C6ERT\BIMABARAJA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+                "Data Source=LAPTOP-5A4C6ERT//BIMABARAJA;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
 
@@ -45,7 +45,20 @@ namespace PraktikumADO
 
         private void btnHitungMhs_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Mahasiswa";
+                cmd = new SqlCommand(query, conn);
+                int jumlah = (int)cmd.ExecuteScalar();
+                txtHasil.Text = jumlah.ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
