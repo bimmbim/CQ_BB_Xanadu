@@ -24,16 +24,26 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source=LAPTOP-5A4C6ERT\\BIMABARAJA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+                "Data Source=LAPTOP-5A4C6ERT\BIMABARAJA;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                MessageBox.Show("Koneksi ke database berhasil");
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnHitungMhs_Click(object sender, EventArgs e)
         {
 
         }
